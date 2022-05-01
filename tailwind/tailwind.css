@@ -703,6 +703,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-r {
+  border-right-width: 1px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -988,6 +992,14 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.875rem;
+}
+
+.pt-1 {
+  padding-top: 0.45rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1220,6 +1232,10 @@ video {
 
 .w-1\/5 {
   width: 20%;
+}
+
+.w-3\/12 {
+  width: 25%;
 }
 
 .w-full {
