@@ -992,8 +992,8 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pb-4 {
-  padding-bottom: 1.1rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .pt-1 {
@@ -1006,6 +1006,10 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.p-icon {
+  padding-top: 0.225rem;
 }
 
 .pt-16 {
