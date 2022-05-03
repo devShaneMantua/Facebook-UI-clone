@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Fakebook
+    </title>
+    <link rel="shortcut icon" href="./images/fb.png" type="image/png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./tailwind/tailwind.css" />
+  </head>
+
+  <body class="bg-gray-100 dark:bg-dark-main">
+    <!-- NAV -->
+    <nav
+      class="bg-white dark:bg-dark-second h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50 border-b dark:border-dark-third"
+    >
+      <!-- NAV LEFT -->
+      <div class="hidden md:flex items-center justify-between w-full md:w-max px-4 py-2">
+        <a href="index.html" class="mr-2 hidden md:inline-block">
+          <img
+            src="./images/fb-logo.png"
+            alt="Facebook logo"
+            class="w-24 sm:w-20 lg:w-10 h-auto"
+          />
+        </a>
+        
+        <a href="#" class="inline-block md:hidden">
+          <img src="./images/fb-logo-mb.png" alt="" class="w-32 h-auto" />
+        </a>
+
+        <div class="flex items-center justify-between space-x-1">
+          <div
+            class="relative bg-gray-100 dark:bg-dark-third px-2 py-2 w-10 h-10 sm:w-11 sm:h-11 lg:h-10 lg:w-10 xl:w-max xl:pl-3 xl:pr-8 rounded-full flex items-center justify-center cursor-pointer"
+          >
+            <i
+              class="bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt"
+            ></i>
+            <input
+              type="text"
+              placeholder="Search Facebook"
+              class="outline-none bg-transparent hidden xl:inline-block"
+            />
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- NAV CENTER -->
+      <ul class="flex w-full lg:w-max items-center justify-center">
+        <li class="w-1/5 md:w-max text-center">
+          <a
+            href="index.html"
+            class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
+          >
+            <i class='bx bx-home-alt-2'></i>
+          </a>
+        </li>
+
+        <li class="w-1/5 md:w-max text-center">
+          <a
+            href="#"
+            class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block text-blue-500 border-b-4 border-blue-500"
+          >
+            <i class="bx bxs-group"></i>
+          </a>
+        </li>
+
+        <li class="w-1/5 md:w-max text-center">
+          <a
+            href="#"
+            class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
+          >
+            <i class="bx bx-slideshow"></i>
+            <span
+              class="text-xs absolute top-0 right-1/4 bg-red-500 text-white font-semibold rounded-full px-1 text-center"
+              >9+</span
+            >
+          </a>
+        </li>
+
+        <li class="w-1/5 md:w-max text-center">
+          <a
+            href="#"
+            class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
+          >
+            <i class="bx bx-store"></i>
+          </a>
+        </li>
+
+        <li class="w-1/5 md:w-max text-center hidden md:inline-block">
+          <a
+            href="#"
+            class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
+          >
+            <i class="bx bx-layout"></i>
+          </a>
+        </li>
+
+        <li class="w-1/5 md:w-max text-center inline-block md:hidden">
+          <a
+            href="#"
+            class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
+          >
+            <i class="bx bx-bell"></i>
+            <span
+              class="text-xs absolute top-0 right-1/4 bg-red-500 text-white font-semibold rounded-full px-1 text-center"
+              >9+</span
+            >
+          </a>
+        </li>
+
+        <li class="w-1/5 md:w-max text-center inline-block xl:hidden">
+          <a
+            href="#"
+            class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative"
+          >
+            <i class="bx bx-menu"></i>
+          </a>
+        </li>
+      </ul>
+
+      <!-- NAV RIGHT -->
+      <ul class="hidden md:flex mx-4 items-center justify-center">
+        <li class="h-full hidden xl:flex">
+          <a
+            href="https://www.facebook.com/shanedelmoira.mantua.7"
+            class="inline-flex items-center justify-center p-1 rounded-full hover:bg-gray-200 dark:hover:bg-dark-third mx-1"
+          >
+            <img
+              src="./images/me.png"
+              alt="Profile picture"
+              class="rounded-full h-7 w-7"
+            />
+            <span class="mx-2 font-semibold dark:text-dark-txt">Shane</span>
+          </a>
+        </li>
+
+        <li>
+          <div
+            class="text-xl hidden xl:grid place-items-center bg-gray-200 dark:bg-dark-third dark:text-dark-txt dark:hover:bg-dark-fourth rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative"
+          >
+            <i class="bx bxs-grid"></i>
+          </div>
+        </li>
+
+        <li>
+          <div
+            class="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third dark:text-dark-txt dark:hover:bg-dark-fourth rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative"
+          >
+            <i class="bx bxl-messenger"></i>
+            <span
+              class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center"
+              >2</span
+            >
+          </div>
+        </li>
+
+        <li>
+          <div
+            class="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third dark:text-dark-txt dark:hover:bg-dark-fourth rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative"
+          >
+            <i class="bx bxs-bell"></i>
+            <span
+              class="text-xs absolute top-0 right-0 bg-red-500 text-white font-semibold rounded-full px-1 text-center"
+              >9+</span
+            >
+          </div>
+        </li>
+
+        <li>
+          <div
+            class="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third dark:text-dark-txt dark:hover:bg-dark-fourth rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative"
+            id="dark-mode-toggle"
+          >
+            <i class="bx bxs-moon"></i>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="md:hidden w-full pt-14">
+      <div class="w-full flex justify-between items-center fixed bg-white dark:bg-dark-second z-40">
+      <span class="font-medium text-2xl dark:text-dark-txt px-4">Friends</span>
+      <div class="flex items-center justify-between p-2 space-x-2 px-3">
+        <div class="text-2xl grid place-items-center bg-gray-200 dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark:text-dark-txt dark:hover:bg-dark-fourth">
+          <i class="bx bx-search-alt-2"></i>
+        </div>
+        <div class="text-2xl grid place-items-center bg-gray-200 dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark:text-dark-txt dark:hover:bg-dark-fourth" id="dark-mode-toggle-mb">
+          <i class="bx bx-moon"></i>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <!-- MAIN -->
+    <div class="flex lg:justify-center h-screen relative">
+      <!-- SIDE NAV -->
+      <div
+        class="w-3/12 pt-16 h-full hidden md:flex flex-col fixed top-0 left-0 shadow bg-white dark:bg-dark-second border-r dark:border-dark-third"
+      >
+        <ul class="p-4 pt-0">
+          <li class="flex justify-between items-center pb-3 dark:text-dark-txt">
+            <span class="font-semibold text-3xl">Friends</span>
+            <a href="#" class="flex items-center space-x-2 p-2">
+              <span
+                class="w-10 h-10 rounded-full grid place-items-center bg-gray-200 hover:bg-gray-300 dark:bg-dark-third dark:hover:bg-dark-fourth"
+              >
+                <i class="bx bxs-cog text-2xl p-icon"></i>
+              </span>
+            </a>
+          </li>
+
+          <li
+            class="flex justify-between items-center bg-gray-200 rounded-lg transition-all xl:text-lg text-sm dark:text-dark-txt dark:bg-dark-fourth cursor-pointer"
+          >
+            <a href="#" class="flex items-center space-x-2 p-2">
+              <span
+                class="w-10 h-10 rounded-full grid place-items-center bg-blue-500"
+              >
+                <i class="bx bxs-group text-white text-2xl p-icon"></i>
+              </span>
+
+              <span class="font-semibold">Home</span></a
+            >
+          </li>
+
+          <li
+            class="flex justify-between items-center hover:bg-gray-200 rounded-lg transition-all xl:text-lg text-sm dark:text-dark-txt dark:hover:bg-dark-fourth cursor-pointer"
+          >
+            <a href="#" class="flex items-center space-x-2 p-2">
+              <span
+                class="w-10 h-10 rounded-full grid place-items-center bg-gray-300 dark:bg-dark-third"
+              >
+                <i class="bx bxs-user-minus text-2xl p-icon"></i>
+              </span>
+
+              <span class="font-semibold">Friend Requests</span></a
+            >
+
+            <span class="text-gray-500 text-3xl px-2 pt-1">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </li>
+
+          <li
+            class="flex justify-between items-center hover:bg-gray-200 rounded-lg transition-all xl:text-lg text-sm dark:text-dark-txt dark:hover:bg-dark-fourth cursor-pointer"
+          >
+            <a href="#" class="flex items-center space-x-2 p-2">
+              <span
+                class="w-10 h-10 rounded-full grid place-items-center bg-gray-300 dark:bg-dark-third"
+              >
+                <i class="bx bxs-user-plus text-2xl p-icon"></i>
+              </span>
+
+              <span class="font-semibold">Suggestions</span></a
+            >
+
+            <span class="text-gray-500 text-3xl px-2 pt-1">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </li>
+
+          <li
+            class="flex justify-between items-center hover:bg-gray-200 rounded-lg transition-all xl:text-lg text-sm dark:text-dark-txt dark:hover:bg-dark-fourth cursor-pointer"
+          >
+            <a href="#" class="flex items-center space-x-2 p-2">
+              <span
+                class="w-10 h-10 rounded-full grid place-items-center bg-gray-300 dark:bg-dark-third"
+              >
+                <i class="bx bxs-user-detail text-2xl p-icon"></i>
+              </span>
+
+              <span class="font-semibold">All friends</span></a
+            >
+
+            <span class="text-gray-500 text-3xl px-2 pt-1">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </li>
+
+          <li
+            class="flex justify-between items-center hover:bg-gray-200 rounded-lg transition-all xl:text-lg text-sm dark:text-dark-txt dark:hover:bg-dark-fourth cursor-pointer"
+          >
+            <a href="#" class="flex items-center space-x-2 p-2">
+              <span
+                class="w-10 h-10 rounded-full grid place-items-center bg-gray-300 dark:bg-dark-third"
+              >
+                <i class="bx bxs-gift text-2xl p-icon"></i>
+              </span>
+
+              <span class="font-semibold">Birthdays</span></a
+            >
+          </li>
+
+          <li
+            class="flex justify-between items-center hover:bg-gray-200 rounded-lg transition-all xl:text-lg text-sm dark:text-dark-txt dark:hover:bg-dark-fourth cursor-pointer"
+          >
+            <a href="#" class="flex items-center space-x-2 p-2">
+              <span
+                class="w-10 h-10 rounded-full grid place-items-center bg-gray-300 dark:bg-dark-third"
+              >
+                <i class="bx bxs-user-detail text-2xl p-icon"></i>
+              </span>
+
+              <span class="font-semibold">Custom Lists</span></a
+            >
+
+            <span class="text-gray-500 text-3xl px-2 pt-1">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- FRIEND CONTENT -->
+
+      <!-- TABLET to DESKTOP view -->
+      <div
+        class="w-full hidden md:block md:w-3/4 pt-16 px-7 h-full absolute top-0 right-0"
+      >
+        <!-- Friend Requests -->
+        <div class="flex justify-between items-center pt-4 group">
+          <span class="font-semibold text-2xl text-sm dark:text-dark-txt"
+            >Friend Requests</span
+          >
+          <span
+            class="text-blue-500 cursor-pointer xl:text-lg text-sm hover:bg-gray-200 dark:hover:bg-dark-fourth p-2 rounded-md"
+            >See All</span
+          >
+        </div>
+
+        <!-- ROW 1 -->
+        <div class="relative flex space-x-2 pt-4">
+          <div
+            class="w-2/4 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f1.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Naver</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c4.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >4 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f2.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Gon</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c10.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/sp1.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >6 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f3.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Ahh...</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c2.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c7.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >25 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/r1.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Sike</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c2.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >10 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden xl:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/r2.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline">U thought</span>
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/sp3.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c8.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >13 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="relative flex space-x-2 pt-4">
+          <div
+            class="w-2/4 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f4.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Cave</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c9.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c6.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >3 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f5.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Yu</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c1.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >27 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f6.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Up</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c3.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c4.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >8 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/r3.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Heh</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c2.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >25 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden xl:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/r4.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline">Gacha</span>
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c6.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/sp1.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >18 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-blue-500 cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Confirm
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Separate -->
+        <div>
+          <a
+            href="#"
+            class="flex items-center justify-center space-x-2 p-2 my-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third"
+          >
+            <span class="text-blue-500 text-lg font-semibold items-center"
+              >See more <i class="bx bxs-down-arrow text-sm"></i></span
+          ></a>
+        </div>
+        <div class="border-b-1 border-gray-200 dark:border-dark-third"></div>
+
+        <!-- People You May Know -->
+
+        <div class="flex justify-between items-center pt-4 group">
+          <span class="font-semibold text-2xl text-sm dark:text-dark-txt"
+            >People You May Know</span
+          >
+          <span
+            class="text-blue-500 cursor-pointer xl:text-lg text-sm hover:bg-gray-200 dark:hover:bg-dark-fourth p-2 rounded-md"
+            >See All</span
+          >
+        </div>
+
+        <!-- ROW 1 -->
+        <div class="relative flex space-x-2 pt-4">
+          <div
+            class="w-2/4 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f7.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Navier</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/sp1.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/sp2.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >13 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f8.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Gone</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c1.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >1 mutual friend</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f9.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >AHHH</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/sp3.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c7.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >30 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f10.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Let</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c8.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c11.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >11 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden xl:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f11.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline">Yue</span>
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c10.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c5.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >17 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="relative flex space-x-2 pt-4 pb-5">
+          <div
+            class="lg:hidden w-2/4 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f10.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Let</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c3.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c7.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >4 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="xl:hidden w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f11.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Yue</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c3.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c7.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >4 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f12.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Down</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/sp3.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+               
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >14 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f13.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline"
+                >Bro..</span
+              >
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c9.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c2.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >26 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f14.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline">Sorrymasen</span>
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c5.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c7.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >20 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden xl:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f15.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+              <span class="font-semibold mb-2 text-xl hover:underline">I had to</span>
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/add.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >32 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+           <div
+            class="hidden xl:flex w-2/4 sm:w-1/5 h-96 rounded-xl shadow overflow-hidden flex flex-col cursor-pointer"
+          >
+            <div class="h-3/5 overflow-hidden">
+              <img src="./images/f16.png" alt="Profile picture" />
+            </div>
+            <div
+              class="flex-col flex p-4 bg-white dark:bg-dark-second dark:text-dark-txt"
+            >
+             <a href="https://youtu.be/dQw4w9WgXcQ"><span class="font-semibold mb-2 text-xl hover:underline">Now click me</span></a> 
+              <div class="flex">
+                <span
+                  class="rounded-full grid place-items-center -ml-1 w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+                >
+                  <img
+                    src="./images/c10.png"
+                    alt="Friend"
+                    class="rounded-full"
+                  />
+                </span>
+                <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2"
+                  >6 mutual friends</span
+                >
+              </div>
+              <div
+                class="w-full bg-light-b text-blue-500 dark:bg-dark-b cursor-pointer py-1 text-center text-lg font-semibold text-white rounded-lg mb-2"
+              >
+                Add Friend
+              </div>
+              <div
+                class="w-full cursor-pointer py-1 text-center text-lg font-semibold text-black bg-gray-200 hover:bg-gray-300 dark:text-dark-txt dark:bg-dark-third dark:hover:bg-dark-fourth rounded-lg"
+              >
+                Delete
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MOBILE view -->
+      <div class="md:hidden w-full h-full pt-16 bg-white dark:bg-dark-second">
+  
+        <div class="flex pt-11 space-x-2 px-4">
+          <span class="py-2 px-3 font-medium bg-gray-200 dark:bg-dark-third rounded-full hover:bg-gray-300 dark:text-dark-txt dark:hover:bg-dark-fourth cursor-pointer">Suggestions</span>
+          <span class="py-2 px-3 font-medium bg-gray-200 dark:bg-dark-third rounded-full hover:bg-gray-300 dark:text-dark-txt dark:hover:bg-dark-fourth cursor-pointer">Your Friends</span>
+        </div>
+        <div class="border-b border-gray-200 dark:border-dark-third mt-4"></div>
+      
+        <div class="flex justify-between items-center py-2 text-xl px-4">
+          <div class="font-semibold dark:text-dark-txt"
+            > Friend requests
+            <span class="text-red-500">17</span>
+          </div>
+          <span
+            class="text-blue-500 cursor-pointer text-lg hover:bg-gray-200 dark:hover:bg-dark-third rounded-md p-1"
+            >See all</span
+          >
+        </div>
+
+        <!-- Friend Lists -->
+        <div class="bg-white dark:bg-dark-second px-4">
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp1.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Naver</span>
+              <span class="float-right text-gray-500 text-sm">1d</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c4.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">4 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Confirm
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Delete
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp2.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Gon</span>
+              <span class="float-right text-gray-500 text-sm">3d</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c10.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/sp1.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">6 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Confirm
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Delete
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp3.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Ahh...</span>
+              <span class="float-right text-gray-500 text-sm">8d</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c2.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c7.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">25 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Confirm
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Delete
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp4.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Cave</span>
+              <span class="float-right text-gray-500 text-sm">4w</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c9.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c6.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">3 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Confirm
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Delete
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp5.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Yu</span>
+              <span class="float-right text-gray-500 text-sm">10w</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c1.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">27 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Confirm
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Delete
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp6.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Up</span>
+              <span class="float-right text-gray-500 text-sm">15w</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c3.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c9.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">8 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Confirm
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Delete
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="w-full bg-gray-200 hover:bg-gray-300 cursor-pointer py-2 mt-4 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg">See all</div>
+        <div class="border-b border-gray-200 dark:border-dark-third my-4"></div>
+        <span class="font-semibold dark:text-dark-txt text-xl">People You May Know</span>
+        </div>
+
+        <!-- People you may know -->
+        <div class="bg-white dark:bg-dark-second px-4">
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp7.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Navier</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/sp1.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/sp2.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">13 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp8.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Gone</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c1.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">1 mutual friend</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp9.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">AHHH</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/sp3.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c7.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">30 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp10.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Let</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c8.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c11.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">11 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp11.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Yue</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c10.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c5.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt mb-2">17 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp12.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Down</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/sp3.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt ">14 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 mb-4 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp13.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Bro...</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c9.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c2.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt ">26 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 mb-4 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp14.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Sorrymasen</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c5.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c7.png" alt="Friend" class="rounded-full"/>
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt ">20 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 mb-4 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp15.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">I had to</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/add.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt ">32 mutual friends</span>
+            </div>
+            <div class="flex space-x-2 mb-4 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="">
+        <a href="https://youtu.be/dQw4w9WgXcQ" class="flex items-center space-x-4 p-2 hover:bg-gray-100 dark:hover:bg-dark-third rounded-lg transition-all">
+          <img src="./images/fp16.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+          <div class="flex-1 h-full">
+            <div class="dark:text-dark-txt text-lg">
+              <span class="font-medium">Now click me</span>
+            </div>
+            <div class="flex items-center">
+              <span class="rounded-full grid place-items-center -ml-1 w-5 h-5 cursor-pointer">
+                <img src="./images/c10.png" alt="Friend" class="rounded-full" />
+              </span>
+              <span class="ml-2 text-gray-500 dark:text-dark-txt"> 6 mutual friends </span>
+            </div>
+            <div class="flex space-x-2 mb-4 pt-1">
+              <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg">
+                Add Friend 
+              </div>
+              <div class="w-1/2 bg-gray-200 hover:bg-gray-300 cursor-pointer py-1 text-center font-semibold text-black dark:text-dark-txt dark:bg-dark-fourth rounded-lg"> 
+                Remove
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        </div>
+      </div>
+
+    <!--========= JS ==========-->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
