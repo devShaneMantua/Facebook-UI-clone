@@ -977,6 +977,10 @@ video {
   margin-top: auto;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .-ml-1 {
   margin-left: -0.25rem;
 }
@@ -1408,9 +1412,11 @@ video {
   width: 100%;
   z-index: 10000;
   background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display:block
+}
+
+.load-text{
+  margin:50px;
 }
 
 .loader-container.active {
